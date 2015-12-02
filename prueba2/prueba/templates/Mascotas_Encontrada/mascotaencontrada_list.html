@@ -1,0 +1,29 @@
+<head>
+	<title> Listar Encontrada </title>
+</head>
+<section>
+	<ul>
+	<h1> Listar Mascotas Encontradas</h1>
+		{% for e in object_list %}
+			{% if e.extraviado %}
+
+			{% else %}
+			<li>
+			<h1>Encontrado/a {{e.estado.Mascota.nombre}} </h1>
+			Nombre Mascota     : {{e.estado.Mascota.nombre}}<br>
+			Nombre Dueño de la Mascota    : {{e.estado.Usuario.username}}<br>
+			Raza     : {{e.estado.Mascota.raza}}<br>
+			Color     : {{e.estado.Mascota.color}}<br>
+			Sexo     : {{e.estado.Mascota.sexo}}<br>
+			Descripcion     : {{e.estado.Mascota.descripcion}}<br>
+			Extraviado       : {{e.extraviado}}<br> 
+			Recompenza      : {{e.recompenza}}<br>
+			<br>
+			</li>
+
+			{% endif %}
+
+			
+		{% endfor %}
+	</ul>
+</section>

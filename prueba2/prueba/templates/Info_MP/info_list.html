@@ -1,0 +1,15 @@
+<head>
+	<title> Lista Info MP </title>
+</head>
+<section>
+	<ul>
+	<h1> Lista Informacion Mascota Perdida</h1>
+		{% for e in object_list %}
+			<li>
+			Nombre Mascota :{{e.mascota_perdida.estado.Mascota.nombre}}<br>
+			Informacion : {{e.descripcion}}<br>
+			</li>
+			
+		{% endfor %}
+	</ul>
+</section>

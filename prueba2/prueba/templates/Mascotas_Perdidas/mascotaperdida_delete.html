@@ -1,0 +1,20 @@
+<form action="" method="post"> {% csrf_token %}
+
+<h1> Borrar Publicaciones Extraviados/Encontrado</h1>
+
+<p> Borrar la Siguiente Publicacion: <br><br>
+Nombre Dueño: {{object.estado.Usuario.username}} <br>
+			Nombre Mascota     : {{object.estado.Mascota.nombre}}<br>
+			Fono Contacto    : {{object.estado.Usuario.telefono}}<br>
+			Raza     : {{object.estado.Mascota.raza}}<br>
+			Color     : {{object.estado.Mascota.color}}<br>
+			Sexo     : {{object.estado.Mascota.sexo}}<br>
+			Descripcion     : {{object.estado.Mascota.descripcion}}<br>
+			Extraviado       : {{object.extraviado}}<br> 
+			Recompenza      : {{object.recompenza}}<br>
+
+
+</p>
+
+<input type="submit" value="confirmar"/>
+</form>
