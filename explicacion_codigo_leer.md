@@ -10,4 +10,9 @@ los valores para estos se deben ingresar en la URL Ejemplo:
 http://localhost:8000/mascotas_perdidas/delete/4/
 http://localhost:8000/mascotas_perdidas/delete/5/
 
+Para el item 1 las mascotas Extraviadas el Link es : http://localhost:8000/mascotas_perdidas/listar_perdida/
+
+Para el item 2 las Mascotas Encontradas el link es: http://localhost:8000/mascotas_perdidas/listar_encontrada/
+
+
 saludos.
